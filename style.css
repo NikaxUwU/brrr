@@ -1,0 +1,170 @@
+html {
+    background-blend-mode: color;
+    background: rgba(244, 244, 244, 0.7);
+    background-image: url(img/1669193878_7-11.jpg);
+    background-size: cover;
+    min-height: 1000px;
+}
+
+.Hello {
+    padding: 2px 4px 4px 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.278);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.cod {
+    width: 50%;
+    padding: 90px 50px 90px 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.796);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.other {
+    color: rgb(147, 225, 147);
+}
+
+.text {
+    padding-left: 20px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+}
+
+.title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    background-color: rgba(255, 255, 255, 0.51);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.img1 {
+    height: 340px;
+    width: auto;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    padding-top: 50px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.im {
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(139, 139, 139);
+    border-radius: 20px 20px 20px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.im:hover {
+    padding: 10px 15px 10px 15px;
+    transition: 0.5s;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 220, 220);
+}
+
+.button_menu {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.im_menu {
+    padding: 10px 30px 10px 30px;
+    background-color: rgb(139, 139, 139);
+    border-radius: 20px 20px 20px 20px;
+    color: rgba(255, 255, 255, 0.748);
+}
+
+.im_menu:hover {
+    padding: 10px 35px 10px 35px;
+    transition: 0.5s;
+    border-radius: 25px 25px 25px 25px;
+    background-color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
+}
+
+.title_main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 53px;
+    color: rgba(15, 18, 54, 0.853);
+    background-color: rgba(255, 255, 255, 0.732);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.Hello_main {
+    color: rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.Hello_main:hover {
+    transition: 1s;
+    color: rgba(1, 68, 10, 0.675);
+    opacity: 1;
+}
+
+.title_menu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.title_menu2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 1200;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.Hello1 {
+    font-weight: bolder;
+}
