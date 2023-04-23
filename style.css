@@ -168,3 +168,19 @@ html {
 .Hello1 {
     font-weight: bolder;
 }
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.text33 {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+}
