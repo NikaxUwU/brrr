@@ -7,68 +7,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <div class="title"><span class="Hello_main"> /while/ </span>Тема №4 «Циклы»<span class="Hello_main"> /for/ </span></div>
+    <hr>
 </head>
 
 <body>
-    <div class="title"><span class="Hello_main"> /while/ </span>Тема №4 «Циклы»<span class="Hello_main"> /for/ </span></div>
-    <hr>
-    <br>
-    <br>
-    <div class="text">
-        <div class="text33"> В этой теме мы познакомимся с циклвми For и While, а также с несколькими операторами. Циклы открывают много новых возможностей, это одна из самых важных функций программировании. Циклв например можно использовать для проверки определённых условий,
-            что часто нужно и в создании и сайтов, и программ, и игр.</div>
+    <div class="body">
+
         <br>
         <br>
-        <h2>Цикл for</h2>
-        <br>
-        <br> Этот цикл не самый универсальный, но выполняется быстрее цикла while. Этот цикл проходится по любому итерируемому объекту (например строке или списку), и во время каждого прохода выполняет тело цикла.
-        <br>
-        <br>
-        <div class="cod">for i in range (0, 10 + 1) </div>
-        <br>
-        <br>Мы задаём переменную i, которая будет принимать по очереди значения заданных чисел от минимального к максимальному (сначало пишем минимальное число, затем после запятой ставим максимальное число(после него пишем "+ 1", ведь программа берёт
-        максимальное число НЕ считая самого числа, можно не писать "+ 1" и просто заранее брать значение на единицу большее, но если максимальное число задаётся переменной, то естественно стоит добавить это))
-        <br>
-        <br>
-        <h2>Цикл while</h2>
-        <br>
-        <br> While — один из самых универсальных циклов в Python, поэтому довольно медленный. Выполняет тело цикла до тех пор, пока условие цикла истинно.
-        <br>
-        <br>
-        <div class="cod">while "условие": <br> <span class="none">....</span>"Операция" </div>
-        <br>
-        <br>
-        <h2>Оператор continue</h2>
-        <br>
-        <br> Оператор continue начинает следующий проход цикла, минуя оставшееся тело цикла (for или while)
-        <br>
-        <br>
-        <div class="cod">for i in 'hello world':
-            <br><span class="none">....</span>if i == 'o':
-            <br> <span class="none">....</span><span class="none">....</span>continue
-            <br> <span class="none">....</span>print(i * 2, end='')</div>
-        <br>
-        <br>
-        <h2>Оператор break</h2>
-        <br>
-        <br>Оператор break досрочно прерывает цикл.
-        <br>
-        <br>
-        <div class="cod">for i in 'hello world':
-            <br> <span class="none">....</span>if i == 'o':
-            <br> <span class="none">....</span><span class="none">....</span>break
-            <br> <span class="none">....</span>print(i * 2, end='') </div>
-        <br>
-        <br> В этом случае после операции <span class="Hello">break</span> можно использовать операцию <span class="Hello">else</span>, такая конструкция выполнится только в том случае, если выход из цикла произошел без помощи<span class="Hello">break.</span>
-        <br>
-        <br>
-        <samp class="back">
+        <div class="text">
+            <div class="text33"> В этой теме мы познакомимся с циклвми For и While, а также с несколькими операторами. Циклы открывают много новых возможностей, это одна из самых важных функций программировании. Циклв например можно использовать для проверки определённых
+                условий, что часто нужно и в создании и сайтов, и программ, и игр.</div>
+            <br>
+            <br>
+            <h2>Цикл for</h2>
+            <br>
+            <br> Этот цикл не самый универсальный, но выполняется быстрее цикла while. Этот цикл проходится по любому итерируемому объекту (например строке или списку), и во время каждого прохода выполняет тело цикла.
+            <br>
+            <br>
+            <div class="cod">for i in range (0, 10 + 1) </div>
+            <br>
+            <br>Мы задаём переменную i, которая будет принимать по очереди значения заданных чисел от минимального к максимальному (сначало пишем минимальное число, затем после запятой ставим максимальное число(после него пишем "+ 1", ведь программа берёт
+            максимальное число НЕ считая самого числа, можно не писать "+ 1" и просто заранее брать значение на единицу большее, но если максимальное число задаётся переменной, то естественно стоит добавить это))
+            <br>
+            <br>
+            <h2>Цикл while</h2>
+            <br>
+            <br> While — один из самых универсальных циклов в Python, поэтому довольно медленный. Выполняет тело цикла до тех пор, пока условие цикла истинно.
+            <br>
+            <br>
+            <div class="cod">while "условие": <br> <span class="none">....</span>"Операция" </div>
+            <br>
+            <br>
+            <h2>Оператор continue</h2>
+            <br>
+            <br> Оператор continue начинает следующий проход цикла, минуя оставшееся тело цикла (for или while)
+            <br>
+            <br>
+            <div class="cod">for i in 'hello world':
+                <br><span class="none">....</span>if i == 'o':
+                <br> <span class="none">....</span><span class="none">....</span>continue
+                <br> <span class="none">....</span>print(i * 2, end='')</div>
+            <br>
+            <br>
+            <h2>Оператор break</h2>
+            <br>
+            <br>Оператор break досрочно прерывает цикл.
+            <br>
+            <br>
+            <div class="cod">for i in 'hello world':
+                <br> <span class="none">....</span>if i == 'o':
+                <br> <span class="none">....</span><span class="none">....</span>break
+                <br> <span class="none">....</span>print(i * 2, end='') </div>
+            <br>
+            <br> В этом случае после операции <span class="Hello">break</span> можно использовать операцию <span class="Hello">else</span>, такая конструкция выполнится только в том случае, если выход из цикла произошел без помощи<span class="Hello">break.</span>
+            <br>
+            <br>
+            <samp class="back">
         <img class="img1" src="img/Kitten-face-close-up-white-and-black_2560x1920.jpg">
         <br>
         <br>
         <br>
             <samp class="button"><a class="im" href="сайт.html" style="text-decoration: none;"> Вернуться на главную страницу</a></samp>
-        </samp>
+            </samp>
+        </div>
     </div>
 </body>
 <footer>

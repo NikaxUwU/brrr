@@ -7,254 +7,257 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <div class="title"><span class="Hello_main"> /print()/ </span>Тема №5 «Строки»<span class="Hello_main"> /input()/ </span></div>
+    <hr>
 </head>
 
 <body>
-    <div class="title"><span class="Hello_main"> /print()/ </span>Тема №5 «Строки»<span class="Hello_main"> /input()/ </span></div>
-    <hr>
-    <br>
-    <br>
-    <br>
-    <div class="text">Строки в Python — упорядоченные последовательности символов, используемые для хранения и представления текстовой информации, поэтому с помощью строк можно работать со всем, что может быть представлено в текстовой форме.
+    <div class="body">
 
         <br>
         <br>
-        <h2>Литералы строк:</h2>
         <br>
-        <br> Литералы — это явно заданные значения в коде программы — константы определенного типа, которые находятся в коде в момент запуска
-        <br> В Python существует несколько литералов строк, сейчас мы рассмотрим три из них.
-        <br>
-        <ul>
-            <li><b>Строки в апострофах и в кавычках</b>
-            </li>
-        </ul>
-        <br>
-        <div class="cod">S = 'spam"s' S = "spam's"</div>
-        <br>
-        <br>
-        <div class="text">
-            <p> Строки в апострофах и в кавычках — одно и то же. Причина наличия двух вариантов в том, чтобы в литеры было можно вставлять кавычки или апострофы.</p>
-        </div>
-        <br>
-        <ul>
-            <li><b>Экранированные последовательности — служебные символы</b></li>
-        </ul>
-        <br>
-        <div class="text">
-            <p>Экранированные последовательности позволяют вставить символы, которые сложно ввести с клавиатуры.</p>
-        </div>
-        <br>
-        <div class="bbbr">
-            <div class="grid3">
-                <span class="tbl obj3">ЭКРАНИРОВАННАЯ ПОСЛЕДОВАТЕЛЬНОСТЬ</span>
-                <span class="tbl obj3">НАЗНАЧЕНИЕ</span>
-                <span class="tbl obj1">\n</span>
-                <span class="tbl obj2">Перевод строки</span>
-                <span class="tbl obj1">\a</span>
-                <span class="tbl obj2">Звонок</span>
-                <span class="tbl obj1">\b</span>
-                <span class="tbl obj2">Забой</span>
-                <span class="tbl obj1">\f</span>
-                <span class="tbl obj2">Перевод страницы</span>
-                <span class="tbl obj1">\r</span>
-                <span class="tbl obj2">Возврат каретки</span>
-                <span class="tbl obj1">\t</span>
-                <span class="tbl obj2">Горизонтальная табуляция</span>
-                <span class="tbl obj1">\v</span>
-                <span class="tbl obj2">Вертикальная табуляция</span>
-                <span class="tbl obj1">\N{id}</span>
-                <span class="tbl obj2">Идентификатор ID базы данных Юникода</span>
-                <span class="tbl obj1">\uhhhh</span>
-                <span class="tbl obj2">16-битовый символ Юникода в 16-ричном представлении</span>
-                <span class="tbl obj1">\Uhhhh…</span>
-                <span class="tbl obj2">32-битовый символ Юникода в 32-ричном представлении</span>
-                <span class="tbl obj1">\xhh</span>
-                <span class="tbl obj2">16-ричное значение символа</span>
-                <span class="tbl obj1">\ooo</span>
-                <span class="tbl obj2">8-ричное значение символа</span>
-                <span class="tbl obj1">\0</span>
-                <span class="tbl obj2">Символ Null (не является признаком конца строки)</span></div>
+        <div class="text">Строки в Python — упорядоченные последовательности символов, используемые для хранения и представления текстовой информации, поэтому с помощью строк можно работать со всем, что может быть представлено в текстовой форме.
 
-        </div>
-        <br>
-        <br>
-        <ul>
-            <li><b>Строки в тройных апострофах или кавычках</b></li>
-        </ul>
-        <br>
-        <div class="text">
-            <p>Главное достоинство строк в тройных кавычках в том, что их можно использовать для записи многострочных блоков текста. Внутри такой строки возможно присутствие кавычек и апострофов, главное, чтобы не было трех кавычек подряд.</p>
-        </div>
-        Итак, о работе со строками мы немного поговорили, теперь поговорим о функциях и методах строк
-        <br>
-        <br>
-        <h2>Базовые операции:</h2>
-        <br>
-        <br>
-        <ul>
-            <li>Конкатенация (сложение)</li>
-        </ul>
-        <br>
-        <div class="cod">S1 = 'Hello ' <br> S2 = input() <br> print(S1 + S2) <br>
-            <div class="other">//Программа выдаст "Hello (Введённая строка)"</div>
-        </div>
-        <br>
-        <br>
-        <ul>
-            <li>Дублирование строки</li>
-        </ul>
-        <br>
-        <div class="cod">print('Hello' * 2)<br>
-            <div class="other">//Программа выдаст "HelloHello"</div>
-        </div>
-        <br>
-        <br>
-        <ul>
-            <li>Длина строки (функция len)</li>
-        </ul>
-        <br>
-        <div class="cod">len('Hello')<br>
-            <div class="other">//Программа выдаст "5"</div>
-        </div>
-        <br>
-        <br>
-        <ul>
-            <li>Доступ по индексу</li>
-        </ul>
-        <br>
-        <div class="cod">S = 'Hello'
-            <br> >>> S[0]
             <br>
-            <div class="other">//Программа выдаст "H"</div>
-            <br>>>> S[2]
             <br>
-            <div class="other">//Программа выдаст "l"</div>
-            <br>>>> S[-2]
+            <h2>Литералы строк:</h2>
             <br>
-            <div class="other">//Программа выдаст "l" (При отрицательном индексе отсчёт идёт с конца строки)</div>
-        </div>
-        <br>
-        <br>
-        <ul>
-            <li>Извлечение среза</li>
-        </ul>
-        <br> Оператор извлечения среза: [X:Y]. X – начало среза, а Y – окончание;символ с номером Y в срез не входит. По умолчанию первый индекс равен 0, а второй — длине строки. Кроме того, можно задать шаг, с которым нужно извлекать срез.
-        <br> <br> <br>
-        <div class="cod">s = 'Hello' <br>s[1:3]<br>
-            <div class="other">//Программа выдаст "el"</div>
-            <br> s[::-1] <br>
-            <div class="other">//Программа выдаст "olleH"</div>
-        </div>
-        <br>
-        <br>
-
-        <h2>Таблица «Функции и методы строк»</h2>
-        <br>
-        <div class="bbbr">
-            <div class="grid4">
-                <span class="tbl obj3">ФУНКЦИЯ ИЛИ МЕТОД</span>
-                <span class="tbl obj3">НАЗНАЧЕНИЕ</span>
-                <span class="tbl obj1">S = 'str'; S = "str"; S = '''str'''; S = """str"""</span>
-                <span class="tbl obj2">Литералы строк</span>
-                <span class="tbl obj1">S = "s\np\ta\nbbb"</span>
-                <span class="tbl obj2">Экранированные последовательности</span>
-                <span class="tbl obj1">S = r"C:\temp\new"</span>
-                <span class="tbl obj2">Неформатированные строки (подавляют экранирование)</span>
-                <span class="tbl obj1">S = b"byte"</span>
-                <span class="tbl obj2">Строка байтов</span>
-                <span class="tbl obj1">S1 + S2</span>
-                <span class="tbl obj2">Конкатенация (сложение строк)</span>
-                <span class="tbl obj1">S1 * 3</span>
-                <span class="tbl obj2">    Повторение строки</span>
-                <span class="tbl obj1">S[i]</span>
-                <span class="tbl obj2">    Обращение по индексу</span>
-                <span class="tbl obj1">S[i:j:step]</span>
-                <span class="tbl obj2">Извлечение среза</span>
-                <span class="tbl obj1">len(S)</span>
-                <span class="tbl obj2">Длина строки</span>
-                <span class="tbl obj1">S.find(str, [start],[end])</span>
-                <span class="tbl obj2">    Поиск подстроки в строке. Возвращает номер первого вхождения или -1</span>
-                <span class="tbl obj1">S.rfind(str, [start],[end])</span>
-                <span class="tbl obj2">Поиск подстроки в строке. Возвращает номер последнего вхождения или -1</span>
-                <span class="tbl obj1">S.index(str, [start],[end])</span>
-                <span class="tbl obj2">Поиск подстроки в строке. Возвращает номер первого вхождения или вызывает ValueError</span>
-                <span class="tbl obj1">S.rindex(str, [start],[end])</span>
-                <span class="tbl obj2">Поиск подстроки в строке. Возвращает номер последнего вхождения или вызывает ValueError</span>
-                <span class="tbl obj1">S.replace(шаблон, замена)</span>
-                <span class="tbl obj2">Замена шаблона</span>
-                <span class="tbl obj1">S.split(символ)</span>
-                <span class="tbl obj2">    Разбиение строки по разделителю</span>
-                <span class="tbl obj1">S.isdigit()</span>
-                <span class="tbl obj2">Состоит ли строка из цифр</span>
-                <span class="tbl obj1">S.isalpha()</span>
-                <span class="tbl obj2">Состоит ли строка из букв</span>
-                <span class="tbl obj1">S.isalnum()</span>
-                <span class="tbl obj2">    Состоит ли строка из цифр или букв</span>
-                <span class="tbl obj1">S.islower()</span>
-                <span class="tbl obj2">Состоит ли строка из символов в нижнем регистре</span>
-                <span class="tbl obj1">S.isupper()</span>
-                <span class="tbl obj2">Состоит ли строка из символов в верхнем регистре</span>
-                <span class="tbl obj1">S.isspace()</span>
-                <span class="tbl obj2">Состоит ли строка из неотображаемых символов (пробел, символ перевода страницы ('\f'), "новая строка" ('\n'), "перевод каретки" ('\r'), "горизонтальная табуляция" ('\t') и "вертикальная табуляция" ('\v'))</span>
-                <span class="tbl obj1">S.istitle()</span>
-                <span class="tbl obj2">Начинаются ли слова в строке с заглавной буквы</span>
-                <span class="tbl obj1">S.upper()</span>
-                <span class="tbl obj2">Преобразование строки к верхнему регистру</span>
-                <span class="tbl obj1">S.lower()</span>
-                <span class="tbl obj2">    Преобразование строки к нижнему регистру</span>
-                <span class="tbl obj1">S.startswith(str)</span>
-                <span class="tbl obj2">Начинается ли строка S с шаблона str</span>
-                <span class="tbl obj1">S.endswith(str)</span>
-                <span class="tbl obj2">Заканчивается ли строка S шаблоном str</span>
-                <span class="tbl obj1">S.join(список)</span>
-                <span class="tbl obj2">    Сборка строки из списка с разделителем S</span>
-                <span class="tbl obj1">ord(символ)</span>
-                <span class="tbl obj2">Символ в его код ASCII</span>
-                <span class="tbl obj1">chr(число)</span>
-                <span class="tbl obj2">Код ASCII в символ</span>
-                <span class="tbl obj1">S.capitalize()</span>
-                <span class="tbl obj2">Переводит первый символ строки в верхний регистр, а все остальные в нижний</span>
-                <span class="tbl obj1">S.center(width, [fill])</span>
-                <span class="tbl obj2">Возвращает отцентрованную строку, по краям которой стоит символ fill (пробел по умолчанию)</span>
-                <span class="tbl obj1">S.count(str, [start],[end])</span>
-                <span class="tbl obj2">Возвращает количество непересекающихся вхождений подстроки в диапазоне [начало, конец] (0 и длина строки по умолчанию)</span>
-                <span class="tbl obj1">S.expandtabs([tabsize])</span>
-                <span class="tbl obj2">Возвращает копию строки, в которой все символы табуляции заменяются одним или несколькими пробелами, в зависимости от текущего столбца. Если TabSize не указан, размер табуляции полагается равным 8 пробелам</span>
-                <span class="tbl obj1">S.lstrip([chars])</span>
-                <span class="tbl obj2">Удаление пробельных символов в начале строки</span>
-                <span class="tbl obj1">S.rstrip([chars])</span>
-                <span class="tbl obj2">Удаление пробельных символов в конце строки</span>
-                <span class="tbl obj1">S.strip([chars])</span>
-                <span class="tbl obj2">Удаление пробельных символов в начале и в конце строки</span>
-                <span class="tbl obj1">S.partition(шаблон)</span>
-                <span class="tbl obj2">Возвращает кортеж, содержащий часть перед первым шаблоном, сам шаблон, и часть после шаблона. Если шаблон не найден, возвращается кортеж, содержащий саму строку, а затем две пустых строки</span>
-                <span class="tbl obj1">S.rpartition(sep)</span>
-                <span class="tbl obj2">Возвращает кортеж, содержащий часть перед последним шаблоном, сам шаблон, и часть после шаблона. Если шаблон не найден, возвращается кортеж, содержащий две пустых строки, а затем саму строку</span>
-                <span class="tbl obj1">S.swapcase()</span>
-                <span class="tbl obj2">Переводит символы нижнего регистра в верхний, а верхнего – в нижний</span>
-                <span class="tbl obj1">S.title()</span>
-                <span class="tbl obj2">Первую букву каждого слова переводит в верхний регистр, а все остальные в нижний</span>
-                <span class="tbl obj1">S.zfill(width)</span>
-                <span class="tbl obj2">Делает длину строки не меньшей width, по необходимости заполняя первые символы нулями</span>
-                <span class="tbl obj1">S.ljust(width, fillchar=" ")</span>
-                <span class="tbl obj2">Делает длину строки не меньшей width, по необходимости заполняя последние символы символом fillchar</span>
-                <span class="tbl obj1">S.rjust(width, fillchar=" ")</span>
-                <span class="tbl obj2">Делает длину строки не меньшей width, по необходимости заполняя первые символы символом fillchar</span>
-                <span class="tbl obj1">S.format(*args, **kwargs)</span>
-                <span class="tbl obj2">Форматирование строки</span>
+            <br> Литералы — это явно заданные значения в коде программы — константы определенного типа, которые находятся в коде в момент запуска
+            <br> В Python существует несколько литералов строк, сейчас мы рассмотрим три из них.
+            <br>
+            <ul>
+                <li><b>Строки в апострофах и в кавычках</b>
+                </li>
+            </ul>
+            <br>
+            <div class="cod">S = 'spam"s' S = "spam's"</div>
+            <br>
+            <br>
+            <div class="text">
+                <p> Строки в апострофах и в кавычках — одно и то же. Причина наличия двух вариантов в том, чтобы в литеры было можно вставлять кавычки или апострофы.</p>
             </div>
+            <br>
+            <ul>
+                <li><b>Экранированные последовательности — служебные символы</b></li>
+            </ul>
+            <br>
+            <div class="text">
+                <p>Экранированные последовательности позволяют вставить символы, которые сложно ввести с клавиатуры.</p>
+            </div>
+            <br>
+            <div class="bbbr">
+                <div class="grid3">
+                    <span class="tbl obj3">ЭКРАНИРОВАННАЯ ПОСЛЕДОВАТЕЛЬНОСТЬ</span>
+                    <span class="tbl obj3">НАЗНАЧЕНИЕ</span>
+                    <span class="tbl obj1">\n</span>
+                    <span class="tbl obj2">Перевод строки</span>
+                    <span class="tbl obj1">\a</span>
+                    <span class="tbl obj2">Звонок</span>
+                    <span class="tbl obj1">\b</span>
+                    <span class="tbl obj2">Забой</span>
+                    <span class="tbl obj1">\f</span>
+                    <span class="tbl obj2">Перевод страницы</span>
+                    <span class="tbl obj1">\r</span>
+                    <span class="tbl obj2">Возврат каретки</span>
+                    <span class="tbl obj1">\t</span>
+                    <span class="tbl obj2">Горизонтальная табуляция</span>
+                    <span class="tbl obj1">\v</span>
+                    <span class="tbl obj2">Вертикальная табуляция</span>
+                    <span class="tbl obj1">\N{id}</span>
+                    <span class="tbl obj2">Идентификатор ID базы данных Юникода</span>
+                    <span class="tbl obj1">\uhhhh</span>
+                    <span class="tbl obj2">16-битовый символ Юникода в 16-ричном представлении</span>
+                    <span class="tbl obj1">\Uhhhh…</span>
+                    <span class="tbl obj2">32-битовый символ Юникода в 32-ричном представлении</span>
+                    <span class="tbl obj1">\xhh</span>
+                    <span class="tbl obj2">16-ричное значение символа</span>
+                    <span class="tbl obj1">\ooo</span>
+                    <span class="tbl obj2">8-ричное значение символа</span>
+                    <span class="tbl obj1">\0</span>
+                    <span class="tbl obj2">Символ Null (не является признаком конца строки)</span></div>
+
+            </div>
+            <br>
+            <br>
+            <ul>
+                <li><b>Строки в тройных апострофах или кавычках</b></li>
+            </ul>
+            <br>
+            <div class="text">
+                <p>Главное достоинство строк в тройных кавычках в том, что их можно использовать для записи многострочных блоков текста. Внутри такой строки возможно присутствие кавычек и апострофов, главное, чтобы не было трех кавычек подряд.</p>
+            </div>
+            Итак, о работе со строками мы немного поговорили, теперь поговорим о функциях и методах строк
+            <br>
+            <br>
+            <h2>Базовые операции:</h2>
+            <br>
+            <br>
+            <ul>
+                <li>Конкатенация (сложение)</li>
+            </ul>
+            <br>
+            <div class="cod">S1 = 'Hello ' <br> S2 = input() <br> print(S1 + S2) <br>
+                <div class="other">//Программа выдаст "Hello (Введённая строка)"</div>
+            </div>
+            <br>
+            <br>
+            <ul>
+                <li>Дублирование строки</li>
+            </ul>
+            <br>
+            <div class="cod">print('Hello' * 2)<br>
+                <div class="other">//Программа выдаст "HelloHello"</div>
+            </div>
+            <br>
+            <br>
+            <ul>
+                <li>Длина строки (функция len)</li>
+            </ul>
+            <br>
+            <div class="cod">len('Hello')<br>
+                <div class="other">//Программа выдаст "5"</div>
+            </div>
+            <br>
+            <br>
+            <ul>
+                <li>Доступ по индексу</li>
+            </ul>
+            <br>
+            <div class="cod">S = 'Hello'
+                <br> >>> S[0]
+                <br>
+                <div class="other">//Программа выдаст "H"</div>
+                <br>>>> S[2]
+                <br>
+                <div class="other">//Программа выдаст "l"</div>
+                <br>>>> S[-2]
+                <br>
+                <div class="other">//Программа выдаст "l" (При отрицательном индексе отсчёт идёт с конца строки)</div>
+            </div>
+            <br>
+            <br>
+            <ul>
+                <li>Извлечение среза</li>
+            </ul>
+            <br> Оператор извлечения среза: [X:Y]. X – начало среза, а Y – окончание;символ с номером Y в срез не входит. По умолчанию первый индекс равен 0, а второй — длине строки. Кроме того, можно задать шаг, с которым нужно извлекать срез.
+            <br> <br> <br>
+            <div class="cod">s = 'Hello' <br>s[1:3]<br>
+                <div class="other">//Программа выдаст "el"</div>
+                <br> s[::-1] <br>
+                <div class="other">//Программа выдаст "olleH"</div>
+            </div>
+            <br>
+            <br>
+
+            <h2>Таблица «Функции и методы строк»</h2>
+            <br>
+            <div class="bbbr">
+                <div class="grid4">
+                    <span class="tbl obj3">ФУНКЦИЯ ИЛИ МЕТОД</span>
+                    <span class="tbl obj3">НАЗНАЧЕНИЕ</span>
+                    <span class="tbl obj1">S = 'str'; S = "str"; S = '''str'''; S = """str"""</span>
+                    <span class="tbl obj2">Литералы строк</span>
+                    <span class="tbl obj1">S = "s\np\ta\nbbb"</span>
+                    <span class="tbl obj2">Экранированные последовательности</span>
+                    <span class="tbl obj1">S = r"C:\temp\new"</span>
+                    <span class="tbl obj2">Неформатированные строки (подавляют экранирование)</span>
+                    <span class="tbl obj1">S = b"byte"</span>
+                    <span class="tbl obj2">Строка байтов</span>
+                    <span class="tbl obj1">S1 + S2</span>
+                    <span class="tbl obj2">Конкатенация (сложение строк)</span>
+                    <span class="tbl obj1">S1 * 3</span>
+                    <span class="tbl obj2">    Повторение строки</span>
+                    <span class="tbl obj1">S[i]</span>
+                    <span class="tbl obj2">    Обращение по индексу</span>
+                    <span class="tbl obj1">S[i:j:step]</span>
+                    <span class="tbl obj2">Извлечение среза</span>
+                    <span class="tbl obj1">len(S)</span>
+                    <span class="tbl obj2">Длина строки</span>
+                    <span class="tbl obj1">S.find(str, [start],[end])</span>
+                    <span class="tbl obj2">    Поиск подстроки в строке. Возвращает номер первого вхождения или -1</span>
+                    <span class="tbl obj1">S.rfind(str, [start],[end])</span>
+                    <span class="tbl obj2">Поиск подстроки в строке. Возвращает номер последнего вхождения или -1</span>
+                    <span class="tbl obj1">S.index(str, [start],[end])</span>
+                    <span class="tbl obj2">Поиск подстроки в строке. Возвращает номер первого вхождения или вызывает ValueError</span>
+                    <span class="tbl obj1">S.rindex(str, [start],[end])</span>
+                    <span class="tbl obj2">Поиск подстроки в строке. Возвращает номер последнего вхождения или вызывает ValueError</span>
+                    <span class="tbl obj1">S.replace(шаблон, замена)</span>
+                    <span class="tbl obj2">Замена шаблона</span>
+                    <span class="tbl obj1">S.split(символ)</span>
+                    <span class="tbl obj2">    Разбиение строки по разделителю</span>
+                    <span class="tbl obj1">S.isdigit()</span>
+                    <span class="tbl obj2">Состоит ли строка из цифр</span>
+                    <span class="tbl obj1">S.isalpha()</span>
+                    <span class="tbl obj2">Состоит ли строка из букв</span>
+                    <span class="tbl obj1">S.isalnum()</span>
+                    <span class="tbl obj2">    Состоит ли строка из цифр или букв</span>
+                    <span class="tbl obj1">S.islower()</span>
+                    <span class="tbl obj2">Состоит ли строка из символов в нижнем регистре</span>
+                    <span class="tbl obj1">S.isupper()</span>
+                    <span class="tbl obj2">Состоит ли строка из символов в верхнем регистре</span>
+                    <span class="tbl obj1">S.isspace()</span>
+                    <span class="tbl obj2">Состоит ли строка из неотображаемых символов (пробел, символ перевода страницы ('\f'), "новая строка" ('\n'), "перевод каретки" ('\r'), "горизонтальная табуляция" ('\t') и "вертикальная табуляция" ('\v'))</span>
+                    <span class="tbl obj1">S.istitle()</span>
+                    <span class="tbl obj2">Начинаются ли слова в строке с заглавной буквы</span>
+                    <span class="tbl obj1">S.upper()</span>
+                    <span class="tbl obj2">Преобразование строки к верхнему регистру</span>
+                    <span class="tbl obj1">S.lower()</span>
+                    <span class="tbl obj2">    Преобразование строки к нижнему регистру</span>
+                    <span class="tbl obj1">S.startswith(str)</span>
+                    <span class="tbl obj2">Начинается ли строка S с шаблона str</span>
+                    <span class="tbl obj1">S.endswith(str)</span>
+                    <span class="tbl obj2">Заканчивается ли строка S шаблоном str</span>
+                    <span class="tbl obj1">S.join(список)</span>
+                    <span class="tbl obj2">    Сборка строки из списка с разделителем S</span>
+                    <span class="tbl obj1">ord(символ)</span>
+                    <span class="tbl obj2">Символ в его код ASCII</span>
+                    <span class="tbl obj1">chr(число)</span>
+                    <span class="tbl obj2">Код ASCII в символ</span>
+                    <span class="tbl obj1">S.capitalize()</span>
+                    <span class="tbl obj2">Переводит первый символ строки в верхний регистр, а все остальные в нижний</span>
+                    <span class="tbl obj1">S.center(width, [fill])</span>
+                    <span class="tbl obj2">Возвращает отцентрованную строку, по краям которой стоит символ fill (пробел по умолчанию)</span>
+                    <span class="tbl obj1">S.count(str, [start],[end])</span>
+                    <span class="tbl obj2">Возвращает количество непересекающихся вхождений подстроки в диапазоне [начало, конец] (0 и длина строки по умолчанию)</span>
+                    <span class="tbl obj1">S.expandtabs([tabsize])</span>
+                    <span class="tbl obj2">Возвращает копию строки, в которой все символы табуляции заменяются одним или несколькими пробелами, в зависимости от текущего столбца. Если TabSize не указан, размер табуляции полагается равным 8 пробелам</span>
+                    <span class="tbl obj1">S.lstrip([chars])</span>
+                    <span class="tbl obj2">Удаление пробельных символов в начале строки</span>
+                    <span class="tbl obj1">S.rstrip([chars])</span>
+                    <span class="tbl obj2">Удаление пробельных символов в конце строки</span>
+                    <span class="tbl obj1">S.strip([chars])</span>
+                    <span class="tbl obj2">Удаление пробельных символов в начале и в конце строки</span>
+                    <span class="tbl obj1">S.partition(шаблон)</span>
+                    <span class="tbl obj2">Возвращает кортеж, содержащий часть перед первым шаблоном, сам шаблон, и часть после шаблона. Если шаблон не найден, возвращается кортеж, содержащий саму строку, а затем две пустых строки</span>
+                    <span class="tbl obj1">S.rpartition(sep)</span>
+                    <span class="tbl obj2">Возвращает кортеж, содержащий часть перед последним шаблоном, сам шаблон, и часть после шаблона. Если шаблон не найден, возвращается кортеж, содержащий две пустых строки, а затем саму строку</span>
+                    <span class="tbl obj1">S.swapcase()</span>
+                    <span class="tbl obj2">Переводит символы нижнего регистра в верхний, а верхнего – в нижний</span>
+                    <span class="tbl obj1">S.title()</span>
+                    <span class="tbl obj2">Первую букву каждого слова переводит в верхний регистр, а все остальные в нижний</span>
+                    <span class="tbl obj1">S.zfill(width)</span>
+                    <span class="tbl obj2">Делает длину строки не меньшей width, по необходимости заполняя первые символы нулями</span>
+                    <span class="tbl obj1">S.ljust(width, fillchar=" ")</span>
+                    <span class="tbl obj2">Делает длину строки не меньшей width, по необходимости заполняя последние символы символом fillchar</span>
+                    <span class="tbl obj1">S.rjust(width, fillchar=" ")</span>
+                    <span class="tbl obj2">Делает длину строки не меньшей width, по необходимости заполняя первые символы символом fillchar</span>
+                    <span class="tbl obj1">S.format(*args, **kwargs)</span>
+                    <span class="tbl obj2">Форматирование строки</span>
+                </div>
+            </div>
+            <br>
+            <br> На этом всё, начиная со строк всё ствновится сложнее, но нужно лишь немного попрактиковаться, тогда даже казалось бы сложная и непонятная тема станет ясна. <br> <br>
         </div>
         <br>
-        <br> На этом всё, начиная со строк всё ствновится сложнее, но нужно лишь немного попрактиковаться, тогда даже казалось бы сложная и непонятная тема станет ясна. <br> <br>
-    </div>
-    <br>
-    <samp class="back">
+        <samp class="back">
         <img class="img1" src="img/i (1).webp">
         <br>
         <br>
         <br>
             <samp class="button"><a class="im" href="сайт.html" style="text-decoration: none;"> Вернуться на главную страницу</a></samp>
-    </samp>
+        </samp>
+    </div>
 </body>
 <footer>
     <div class="by">by Siowkes</div>
