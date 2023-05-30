@@ -262,3 +262,33 @@ footer {
 .none {
     opacity: 0;
 }
+
+.img2 {
+    height: 50px;
+    width: auto;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.img2:hover {
+    height: 70px;
+    width: auto;
+    transition: 0.5s
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 300px 400px;
+    grid-template-rows: auto;
+    border-width: 3px;
+    border-color: black;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: 300px 500px;
+    grid-template-rows: auto;
+    border-width: 3px;
+    border-color: black;
+}
