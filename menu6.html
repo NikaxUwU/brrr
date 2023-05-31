@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <div class="title"><span class="Hello_main"> /print()/ </span>Тема №6 «Списки»<span class="Hello_main"> /input()/ </span></div>
+    <div class="title"><span class="Hello_main"> /list/ </span>Тема №6 «Списки»<span class="Hello_main"> /append(x)/ </span></div>
     <hr>
 </head>
 
@@ -17,7 +17,80 @@
         <br>
         <br>
         <br>
-        <div class="text"></div>
+        <div class="text">Списки в Python — упорядоченные изменяемые коллекции объектов произвольных типов (почти как массив, но типы могут отличаться). <br>Для начала список надо создать, а сделать это можно несколькими способами:
+            <br>
+            <br>
+            <ul>
+                <li><b> С помощью функции
+                    <span class="Hello">list</span></b>
+                </li>
+            </ul>
+            <br>
+            <div class="cod">list('список')
+                <div class="other">// переменная будет приинимать значение "['с', 'п', 'и', 'с', 'о', 'к']"</div>
+            </div>
+            <br>
+            <br>
+            <ul>
+                <li><b>С помощью литерала</b></li>
+            </ul>
+            <br>
+            <div class="cod">s = []
+                <div class="other">// Создаёт пустой список</div><br>l = ['списо', 'к', 1]
+                <div class="other">// Создаёт список со значением ['списо', 'к', 1]</div>
+            </div>
+            <br>
+            <br>
+            <ul>
+                <li><b>С помощью генератора списков</b></li>
+            </ul>
+            <br> Генератор списков — способ построить новый список, применяя выражение к каждому элементу последовательности. Генераторы списков очень похожи на цикл for. <br>
+            <br>
+            <div class="cod">list = [i for i in range(0, 10)] <br> print(list) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                <div class="other">// Программа выдаст [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</div> <br>list = [i for i in "python"] <br> print(list)
+                <div class="other">// Программа выдаст ['p', 'y', 't', 'h', 'o', 'n']</div>
+            </div>
+            <br>
+            <br>
+            <h2>Функции и методы списков</h2>
+            <br>
+            <h3>Таблица «методы списков»</h3>
+            <br>
+            <div class="bbbr">
+                <div class="grid5">
+                    <span class="tbl obj3">Метод</span>
+                    <span class="tbl obj3">Описание</span>
+                    <span class="tbl obj1">list.append(x)</span>
+                    <span class="tbl obj2">Добавляет элемент в конец списка</span>
+                    <span class="tbl obj1">list.extend(L)</span>
+                    <span class="tbl obj2">Расширяет список list, добавляя в конец все элементы списка L</span>
+                    <span class="tbl obj1">list.insert(i, x)</span>
+                    <span class="tbl obj2">Вставляет на i-ый элемент значение x</span>
+                    <span class="tbl obj1">list.remove(x)</span>
+                    <span class="tbl obj2">Удаляет первый элемент в списке, имеющий значение x. ValueError, если такого элемента не существует</span>
+                    <span class="tbl obj1">list.pop([i])</span>
+                    <span class="tbl obj2">    Удаляет i-ый элемент и возвращает его. Если индекс не указан, удаляется последний элемент</span>
+                    <span class="tbl obj1">list.index(x, [start [, end]])</span>
+                    <span class="tbl obj2">Возвращает положение первого элемента со значением x (при этом поиск ведется от start до end)</span>
+                    <span class="tbl obj1">list.count(x)</span>
+                    <span class="tbl obj2">    Возвращает количество элементов со значением x</span>
+                    <span class="tbl obj1">list.sort([key=функция])</span>
+                    <span class="tbl obj2">    Сортирует список на основе функции</span>
+                    <span class="tbl obj1">list.reverse()</span>
+                    <span class="tbl obj2">    Разворачивает список</span>
+                    <span class="tbl obj1">list.copy()</span>
+                    <span class="tbl obj2">Поверхностная копия списка</span>
+                    <span class="tbl obj1">list.clear()</span>
+                    <span class="tbl obj2">Очищает список</span></div>
+            </div>
+            <br>
+            <br> Нужно отметить, что методы списков, в отличие от строковых методов, изменяют сам список, а потому результат выполнения не нужно записывать в эту переменную.
+            <br>
+            <br> На этом основы языка программирования Python вам известны, но конечно же в программировании одной теорией не обойтись, поэтому советую вам попрактиковаться, сделать это можно на специальных сайтах. Например:
+            <a class="mi" href="https://www.schoolsw3.com/python/exercise.php" style="text-decoration: none;">schoolsw3.com</a>
+            <br>
+            <br>
+        </div>
         <samp class="back">
         <img class="img1" src="img/black_white_animal_photography_48.jpg">
         <br>
